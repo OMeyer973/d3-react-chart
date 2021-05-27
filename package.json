@@ -1,0 +1,33 @@
+{
+  "name": "d3-react-chart",
+  "version": "1.0.0",
+  "description": "d3 react chart",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "clean": "del dist",
+    "predeploy": "del dist && npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMeyer973/d3-react-chart.git"
+  },
+  "author": "omeyer973",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMeyer973/d3-react-chart/issues"
+  },
+  "homepage": "https://OMeyer973.github.io/d3-react-chart",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "d3": "^6.7.0",
+    "react": "^16.14.0",
+    "react-dom": "^17.0.2"
+  }
+}
